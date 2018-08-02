@@ -1,0 +1,8 @@
+在主机 ： VBoxManage list hdds
+         VBoxManage  modifyhd id –resize NUM (MB)
+在ubuntu： fdisk /dev/sda m n p w
+          sudo mkfs -t ext4 /dev/sdax
+          mount /etc/sdax  挂载目录
+          vim /etc/fstab  增加如下一行代码  /dev/sda4 /home/ouyangpeng/sda4/ ext4 defaults 0 1
+          
+          df -H
